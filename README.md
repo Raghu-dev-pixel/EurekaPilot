@@ -1,5 +1,5 @@
 # EurekaPilot
-**EurekaPilot** is an AgenticAI that aims to evaluate the novelty of research ideas and suggest actionable improvements using structured reasoning and tool integration.
+**EurekaPilot** is an AgenticAI that evaluates the novelty of research ideas and suggests actionable improvements through structured reasoning and tool integration.
 
 ## Overview
 EurekaPilot takes a vague research idea and:
@@ -69,10 +69,11 @@ EurekaPilot includes a minimal UI designed using gradio:
 * **Input**: Research Idea
 * **Output**: Novelty score + analysis + Research proposal
 * **Logs**: Available on the terminal but not on the gradio, this provides transparent execution steps
+* **Sample Examples**: ![UI](images/demo1.jpg), ![UI](images/demo2.jpg)
 
 ## Note 
 1) When running locally -> ChromaDB persists data
-2) In Google Colab -> acts as a session memory unless backed by GoogleDrive
+2) In Google Colab -> acts as a session memory unless backed by Google Drive
 
 ## Future Improvements
 * Provide Multi-Agent support

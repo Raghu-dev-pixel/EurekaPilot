@@ -21,7 +21,7 @@ On the contrary, **EurekaPilot** acts as a research companion, helping students 
 * Refine vague and basic ideas into stronger research proposals
 
 ## Agent Architecture
-EurekaPilot uses a deterministic execution loop and performs the following tasks:
+EurekaPilot uses a deterministic execution loop and performs the following tasks:![UI](images/Architecture.png)
 1) **Plan** -> Convert the user's idea/goal into a structured TODO list
 2) **Search** -> The agent searches for research papers based on semantics, first in the RAG and then through Semantic Scholar if the papers are not available in the local RAG
 3) **Analyze** -> Evaluate novelty using retrieved context

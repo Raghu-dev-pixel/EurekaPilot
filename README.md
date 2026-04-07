@@ -64,6 +64,21 @@ To avoid prompt overflow and maintain quality:
 * **RAG vs Full conversation memory** -> Prevents context bloat
 * **Single domain focus** -> Improves depth and quality
 
+## How to Execute EurekaPilot
+* Download EurekaPilot.py from this repo into your local system
+* Ensure your system (Laptop/ desktop) has Python installed (python --version) in it
+* Install the following Python libraries
+  ```bash
+  pip install openai
+  pip install gradio
+  pip install chromadb
+  ```
+* Run the tool, using the command below
+  ```bash
+  ./EurekaPilot.py
+  ```
+* An alternative way is to upload the EurekaPilot.py to Google Colab and run the application from Google Colab
+  
 ## Demo
 EurekaPilot includes a minimal UI designed using gradio:
 * **Input**: Research Idea

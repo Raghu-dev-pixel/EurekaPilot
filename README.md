@@ -90,6 +90,9 @@ EurekaPilot includes a minimal UI designed using gradio:
 1) When running locally -> ChromaDB persists data
 2) In Google Colab -> acts as a session memory unless backed by Google Drive
 
+## Sample Logs
+This section provides sample execution logs of EurekaPilot. The logs capture the step-by-step execution of the agent, including planning, retrieval, analysis, and generation stages. From these logs, the internal workflow of the system—such as task breakdown, tool usage, and decision flow—can be clearly inferred.![UI](images/DataFlow1.png), ![UI](images/DataFlow2.png), ![UI](images/DataFlow3.png)
+
 ## Evaluation Strategies
 ### 1) Basic Idea Expansion
 **Input:**
@@ -131,8 +134,12 @@ EurekaPilot includes a minimal UI designed using gradio:
 * Avoided use of frameworks such as LangChain, AutoGen, and so on
 * Focused on core functionality and robustness
 * Prioritized in keeping the design simple and clear
-* Implemented custom loop, prompts, and context handling.
+* Implemented custom loop, prompts, and context handling
 * Made use of all the tools provided in the core as well as the optional section (RAG, external tools, UI, and provided memory-based persistence)
+
+
+
+
 
 
 

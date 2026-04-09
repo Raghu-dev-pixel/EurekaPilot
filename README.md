@@ -97,18 +97,24 @@ This section provides sample execution logs of EurekaPilot. The logs capture the
 ### 1) Basic Idea Expansion
 **Input:**
 * A vague idea (e.g, "Using AI in healthcare")
+
 **Expected Outcome:**
 * Structured TODO plan is created
 * Relevant research papers are retrieved
 * A structured research proposal is generated
 
+**Success Criteria**
+* Output idea becomes more concrete
+
 ### 2) Novelty Assessment
 **Input:**
 * An idea that overlaps with existing research (e.g, "We propose using CNN for image classification")
+
 **Expected Outcome:**
 * System identifies similar work
 * Highlights gaps, generates a novelty score
 * Suggests improvement strategies
+
 **Success Criteria:**
 * The output clearly distinguishes between existing work and the proposed idea
 * Improvements are meaningful and not generic
@@ -116,6 +122,7 @@ This section provides sample execution logs of EurekaPilot. The logs capture the
 ### 3) Retrieval Robustness
 **Input:**
 * Idea with limited research coverage (e.g, "Use of Mixup for overfitting")
+
 **Expected Outcome:**
 * System falls back from RAG to Search across other journals through the Semantic Scholar API
 * If retrieval fails even using the Semantic API, the system uses LLM feedback as a fallback option. (Note: Here, there is a possibility of hallucination, which can be avoided by simply logging a failure message instead of generating generic responses)

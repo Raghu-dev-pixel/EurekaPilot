@@ -90,11 +90,41 @@ EurekaPilot includes a minimal UI designed using gradio:
 1) When running locally -> ChromaDB persists data
 2) In Google Colab -> acts as a session memory unless backed by Google Drive
 
+## Evaluation Strategies
+### 1) Basic Idea Expansion
+**Input:**
+* A vague idea (e.g, "Using AI in healthcare")
+**Expected Outcome:**
+* Structured TODO plan is created
+* Relevant research papers are retrieved
+* A structured research proposal is generated
+
+### 2) Novelty Assessment
+**Input:**
+* An idea that overlaps with existing research (e.g, "We propose using CNN for image classification")
+**Expected Outcome:**
+* System identifies similar work
+* Highlights gaps, generates a novelty score
+* Suggests improvement strategies
+**Success Criteria:**
+* The output clearly distinguishes between existing work and the proposed idea
+* Improvements are meaningful and not generic
+
+### 3) Retrieval Robustness
+**Input:**
+* Idea with limited research coverage (e.g, "Use of Mixup for overfitting")
+**Expected Outcome:**
+* System falls back from RAG to Search across other journals through the Semantic Scholar API
+* If retrieval fails even using the Semantic API, the system uses LLM feedback as a fallback option. (Note: Here, there is a possibility of hallucination, which can be avoided by simply logging a failure message instead of generating generic responses)
+
+**Success Criteria**
+* System does not fail
+* Still produces reasonable output
+  
 ## Future Improvements
 * Provide Multi-Agent support
-* Add source contribution
-* Improve query generation
-* Enhance retrieval relevance filtering
+* Add better source contribution
+* Improve the technical depth of the generated research proposal
 * Explore GraphRAG-based data handling for context-based retrieval
 
 ## Time and Trade-off
